@@ -1,0 +1,293 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Git! | BroMikey</title><meta name="author" content="BroMikey"><meta name="copyright" content="BroMikey"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hello Git!# merge conflicts# 测试，这是在master分支# 测试在readme-re的提交!# 测试，解决冲突# 测试解决merge冲突    简单的常用指令 git status	# 查看当前文件状态git branch	# 查看分支情况git branch new-branch	# 创建新分支git switch branch-name	# 切换到该分支git s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello Git!">
+<meta property="og:url" content="https://bromikey.github.io./2024/08/29/Hello%20Git!/index.html">
+<meta property="og:site_name" content="BroMikey">
+<meta property="og:description" content="Hello Git!# merge conflicts# 测试，这是在master分支# 测试在readme-re的提交!# 测试，解决冲突# 测试解决merge冲突    简单的常用指令 git status	# 查看当前文件状态git branch	# 查看分支情况git branch new-branch	# 创建新分支git switch branch-name	# 切换到该分支git s">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2017/01/31/13/40/shooting-star-2024127_640.png">
+<meta property="article:published_time" content="2024-08-29T12:44:15.289Z">
+<meta property="article:modified_time" content="2024-12-31T14:27:59.914Z">
+<meta property="article:author" content="BroMikey">
+<meta property="article:tag" content="Git">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2017/01/31/13/40/shooting-star-2024127_640.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://bromikey.github.io./2024/08/29/Hello%20Git!/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Git!',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-31 22:27:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s2.loli.net/2024/04/25/N4ckA63QPXq5jty.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.pixabay.com/photo/2017/01/31/13/40/shooting-star-2024127_640.png')"><nav id="nav"><span id="blog-info"><a href="/" title="BroMikey"><span class="site-name">BroMikey</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hello Git!</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-29T12:44:15.289Z" title="发表于 2024-08-29 20:44:15">2024-08-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-31T14:27:59.914Z" title="更新于 2024-12-31 22:27:59">2024-12-31</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hello Git!"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Hello-Git"><a href="#Hello-Git" class="headerlink" title="Hello Git!"></a>Hello Git!</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># merge conflicts</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 测试，这是在master分支</span></span><br><span class="line"><span class="comment"># 测试在readme-re的提交!</span></span><br><span class="line"><span class="comment"># 测试，解决冲突</span></span><br><span class="line"><span class="comment"># 测试解决merge冲突</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>简单的常用指令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git status	<span class="comment"># 查看当前文件状态</span></span><br><span class="line">git branch	<span class="comment"># 查看分支情况</span></span><br><span class="line">git branch new-branch	<span class="comment"># 创建新分支</span></span><br><span class="line">git switch branch-name	<span class="comment"># 切换到该分支</span></span><br><span class="line">git switch -c new-branch	<span class="comment"># 创建并切换到该分支</span></span><br><span class="line">git add	filename	<span class="comment"># 将文件提价到缓存区</span></span><br><span class="line">git add -A		<span class="comment"># 将所有更新的文件添加</span></span><br><span class="line">git commit		<span class="comment"># 将缓存区的文件提交到分支上</span></span><br><span class="line">git commit -m <span class="string">&quot;a commit message&quot;</span> <span class="comment"># 同上，不过直接指定message内容为&quot;&quot;内内容</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="再本地提交树上移动"><a href="#再本地提交树上移动" class="headerlink" title="再本地提交树上移动"></a>再本地提交树上移动</h2><h3 id="HEAD分离"><a href="#HEAD分离" class="headerlink" title="HEAD分离"></a>HEAD分离</h3><p>HEAD一般是对当前分支的符号引用，指向你正在其基础上进行工作的提交记录。HEAD 总是指向当前分支上最近一次提交记录。大多数修改提交树的 Git 命令都是从改变 HEAD 的指向开始的。</p>
+<p>HEAD 通常情况下是指向分支名的（如 bugFix）。在你提交时，改变了 bugFix 的状态，这一变化通过 HEAD 变得可见。</p>
+<p><img src="/image/Hello-Git/Hello-Git-01.png" alt="Hello-Git-01"></p>
+<p>如果运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git switch c1	<span class="comment"># 将HEAD分离出来</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/image/Hello-Git/Hello-Git-02.png" alt="Hello-Git-02"></p>
+<h3 id="相对引用"><a href="#相对引用" class="headerlink" title="相对引用"></a>相对引用</h3><p>我们直接使用指定哈希值来移动，例如一次提交值为<code>fed2da64c0efc5293610bdd892f82a58e8cbc5d8</code>，可以使用git switch fed2来使HEAD指向此提交</p>
+<p>不过，相对引用解决了这样指定的问题，可以使用<code>HEAD^</code>来表示向上移动一个提交记录，<code>HEAD~3</code>等来移动多个单位。</p>
+<p>这个操作符可以反复在节点名称后，</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git switch main^</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/image/Hello-Git/Hello-Git-01.png" alt="Hello-Git-03"></p>
+<p><img src="/image/Hello-Git/Hello-Git-04.png" alt="Hello-Git-04"></p>
+<h3 id="撤销变更"><a href="#撤销变更" class="headerlink" title="撤销变更"></a>撤销变更</h3><p>git reset和git revert</p>
+<p>git reset 通过把分支记录回退几个提交记录来实现撤销改动。你可以将这想象成“改写历史”。<code>git reset</code> 向上移动分支，原来指向的提交记录就跟从来没有提交过一样。</p>
+<p><img src="/image/Hello-Git/Hello-Git-05.png" alt="Hello-Git-05"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git reset HEAD^</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/image/Hello-Git/Hello-Git-06.png" alt="Hello-Git-06"></p>
+<p>git revert 虽然在你的本地分支中使用 <code>git reset</code> 很方便，但是这种“改写历史”的方法对大家一起使用的远程分支是无效的！为了撤销更改并<strong>分享</strong>给别人，我们需要使用 <code>git revert</code>。</p>
+<p><img src="/image/Hello-Git/Hello-Git-07.png" alt="Hello-Git-07"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git revert HEAD</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/image/Hello-Git/Hello-Git-08.png" alt="Hello-Git-08"></p>
+<p>可以看到多了一个新提交，这个提交就是用来撤销c2的更改的，此时c2‘的状态与c1相同。</p>
+<h2 id="远程提交"><a href="#远程提交" class="headerlink" title="远程提交"></a>远程提交</h2><p>将一个本地仓库提交到远程，只需要</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git remote add origin &lt;remote-repository-url&gt;</span><br></pre></td></tr></table></figure>
+
+<p>然后将自己的本地内容全部push到远程</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push -u origin main  <span class="comment"># 将main推送到远程并设置跟踪分支</span></span><br></pre></td></tr></table></figure>
+
+<p>之后本地就多了一个远程分支，当切换到远程分支，自动进入分离HEAD状态，这么做是出于不能直接在这些分支上进行操作的原因, 你必须在别的地方完成你的工作, （更新了远程分支之后）再用远程分享你的工作成果。</p>
+<p>开始前，需要确认自己的本地代码库是新的</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git pull origin main  <span class="comment"># 拉取远程main分支的最新更改</span></span><br></pre></td></tr></table></figure>
+
+<p>这一步会将远程仓库中 <code>main</code> 分支的最新更新拉取并合并到本地 <code>main</code> 分支中。</p>
+<h3 id="创建新分支"><a href="#创建新分支" class="headerlink" title="创建新分支"></a>创建新分支</h3><p>新功能或修复通常在新的分支上进行，以保持 <code>main</code> 分支的稳定性：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout -b feature-branch  <span class="comment"># 创建并切换到新分支</span></span><br></pre></td></tr></table></figure>
+
+<p>这里 <code>feature-branch</code> 是你为新功能或修复创建的分支名称。</p>
+<h3 id="开发和提交更改"><a href="#开发和提交更改" class="headerlink" title="开发和提交更改"></a>开发和提交更改</h3><p>在新分支上进行开发，并且在完成一定的工作后提交更改：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git add .  <span class="comment"># 添加所有更改</span></span><br><span class="line">git commit -m <span class="string">&quot;Implement new feature X&quot;</span>  <span class="comment"># 提交更改</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="推送分支到远程仓库"><a href="#推送分支到远程仓库" class="headerlink" title="推送分支到远程仓库"></a>推送分支到远程仓库</h3><p>将你的分支推送到远程仓库，以便进行代码审查或与其他团队成员共享：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin feature-branch</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建Pull-Request-PR"><a href="#创建Pull-Request-PR" class="headerlink" title="创建Pull Request (PR)"></a>创建Pull Request (PR)</h3><ul>
+<li>在远程仓库管理平台（如GitHub、GitLab、Bitbucket等）上，为你的 <code>feature-branch</code> 创建一个Pull Request (PR)。</li>
+<li>代码审查：团队成员可以审查你的更改，提出建议或进行讨论。</li>
+<li>合并：一旦PR通过审查并获得批准，它将被合并到 <code>main</code> 分支中。</li>
+</ul>
+<h3 id="同步本地仓库"><a href="#同步本地仓库" class="headerlink" title="同步本地仓库"></a>同步本地仓库</h3><p>合并PR后，需要将最新的 <code>main</code> 分支同步到你的本地仓库：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git checkout main</span><br><span class="line">git pull origin main  <span class="comment"># 拉取最新的main分支</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="删除本地和远程的临时分支"><a href="#删除本地和远程的临时分支" class="headerlink" title="删除本地和远程的临时分支"></a>删除本地和远程的临时分支</h3><ul>
+<li><p>删除本地分支</p>
+<p>（如果不再需要）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git branch -d feature-branch</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除远程分支</p>
+<p>（通常由仓库管理员或通过平台操作完成）：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git push origin --delete feature-branch</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="总结的工作流"><a href="#总结的工作流" class="headerlink" title="总结的工作流"></a>总结的工作流</h3><ol>
+<li>**<code>git pull origin main</code>**：从远程仓库拉取最新的 <code>main</code> 分支的更新。</li>
+<li>**<code>git checkout -b &lt;branch-name&gt;</code>**：为新功能或修复创建并切换到新分支。</li>
+<li>**<code>git add</code> 和 <code>git commit</code>**：在新分支上开发并提交更改。</li>
+<li>**<code>git push origin &lt;branch-name&gt;</code>**：将分支推送到远程仓库。</li>
+<li><strong>Pull Request</strong>：创建一个PR，等待代码审查并合并到 <code>main</code>。</li>
+<li>**<code>git pull origin main</code>**：合并后，同步本地 <code>main</code> 分支。</li>
+<li><strong>删除分支</strong>：清理不再需要的分支。</li>
+</ol>
+<p>同时，远程仓库命名规范为<code>&lt;remote name&gt;/&lt;branch name&gt;</code>，不过，当你使用git clone 后，git会帮你把远程仓库设置为origin</p>
+<p>当我们切换到远程分支后，此时git commit不会更新o&#x2F;main，只有在远程仓库对应分支更新后才会更新远程此远程分支。</p>
+<h2 id="从远程获取更新"><a href="#从远程获取更新" class="headerlink" title="从远程获取更新"></a>从远程获取更新</h2><p>git fetch 是直接从远程回去最新更新，而本地没有</p>
+<p><img src="/image/Hello-Git/Hello-Git-09.png" alt="Hello-Git-09"></p>
+<p>使用git fetch后会变成</p>
+<p><img src="/image/Hello-Git/Hello-Git-10.png" alt="Hello-Git-10"></p>
+<ol start="3">
+<li><h4 id="如果远程分支是如图，而本地分支已经在此分支上提交了更新，此时需要git-fetch获取更新后再使用git-merge合并，这两条命令等同于git-pull"><a href="#如果远程分支是如图，而本地分支已经在此分支上提交了更新，此时需要git-fetch获取更新后再使用git-merge合并，这两条命令等同于git-pull" class="headerlink" title="如果远程分支是如图，而本地分支已经在此分支上提交了更新，此时需要git fetch获取更新后再使用git merge合并，这两条命令等同于git pull"></a>如果远程分支是如图，而本地分支已经在此分支上提交了更新，此时需要git fetch获取更新后再使用git merge合并，这两条命令等同于git pull</h4></li>
+</ol>
+<p><img src="/image/Hello-Git/Hello-Git-11.png" alt="Hello-Git-11"></p>
+<p><img src="/image/Hello-Git/Hello-Git-12.png" alt="Hello-Git-12"></p>
+<h2 id="将本地更新提交到远程"><a href="#将本地更新提交到远程" class="headerlink" title="将本地更新提交到远程"></a>将本地更新提交到远程</h2><p>我们在本地做出了一些更新和提交，此时可以看到o&#x2F;main分支与远程仓&#x3D;仓库同步，而main分支仍处于main状态</p>
+<p><img src="/image/Hello-Git/Hello-Git-13.png" alt="Hello-Git-13"></p>
+<p>使用git push后，可以看到最新的更新被同步到了远程仓库的main分支，而本地的远程分支也更新到了与main分支同步</p>
+<p><img src="/image/Hello-Git/Hello-Git-14.png" alt="Hello-Git-14"></p>
+<p>当我们使用git push时，可能会遇到本地在c1的基础上提交了c3，而远程仓库已经有了c2，此时使用git push会失败。</p>
+<p><img src="/image/Hello-Git/Hello-Git-15.png" alt="Hello-Git-15"></p>
+<p>如果我们使用</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git rebase o/main</span><br><span class="line"><span class="comment"># 前两行等同于git pull --rebase</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>后，先获取最新更新，然后将我们的提交rebase 到最新更新上，最后再git push就可以了。</p>
+<p>同理git merge有同样的效果，不过具体的实现过程不同</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git fetch</span><br><span class="line">git merge o/main</span><br><span class="line"><span class="comment"># 前两行等同于git pull</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src="/image/Hello-Git/Hello-Git-16.png" alt="Hello-Git-16"></p>
+<p><img src="/image/Hello-Git/Hello-Git-17.png" alt="Hello-Git-17"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://BroMikey.github.io.">BroMikey</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://bromikey.github.io./2024/08/29/Hello%20Git!/">https://bromikey.github.io./2024/08/29/Hello%20Git!/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://BroMikey.github.io." target="_blank">BroMikey</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Git/">Git</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.pixabay.com/photo/2017/01/31/13/40/shooting-star-2024127_640.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/09/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" title=""><img class="cover" src="https://source.unsplash.com/random" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/2024/08/22/%E5%B0%8F%E6%98%8E%E5%92%8C%E7%8E%8B%E7%8C%AB/" title="小明和王猫"><img class="cover" src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_640.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">小明和王猫</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81OTc4Ny8zNjI0OQ=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s2.loli.net/2024/04/25/N4ckA63QPXq5jty.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">BroMikey</div><div class="author-info__description">唯有将目的转向过程，唯有站在审美的角度上去观察生活，人才能发现存在的真正乐趣</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">30</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/BroMikey"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/BroMikey" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:bromikey0518@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">谢bro的博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hello-Git"><span class="toc-number">1.</span> <span class="toc-text">Hello Git!</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%8D%E6%9C%AC%E5%9C%B0%E6%8F%90%E4%BA%A4%E6%A0%91%E4%B8%8A%E7%A7%BB%E5%8A%A8"><span class="toc-number">1.1.</span> <span class="toc-text">再本地提交树上移动</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HEAD%E5%88%86%E7%A6%BB"><span class="toc-number">1.1.1.</span> <span class="toc-text">HEAD分离</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E5%BC%95%E7%94%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text">相对引用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%92%A4%E9%94%80%E5%8F%98%E6%9B%B4"><span class="toc-number">1.1.3.</span> <span class="toc-text">撤销变更</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E6%8F%90%E4%BA%A4"><span class="toc-number">1.2.</span> <span class="toc-text">远程提交</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%96%B0%E5%88%86%E6%94%AF"><span class="toc-number">1.2.1.</span> <span class="toc-text">创建新分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E5%92%8C%E6%8F%90%E4%BA%A4%E6%9B%B4%E6%94%B9"><span class="toc-number">1.2.2.</span> <span class="toc-text">开发和提交更改</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E5%88%86%E6%94%AF%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">1.2.3.</span> <span class="toc-text">推送分支到远程仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAPull-Request-PR"><span class="toc-number">1.2.4.</span> <span class="toc-text">创建Pull Request (PR)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="toc-number">1.2.5.</span> <span class="toc-text">同步本地仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A0%E9%99%A4%E6%9C%AC%E5%9C%B0%E5%92%8C%E8%BF%9C%E7%A8%8B%E7%9A%84%E4%B8%B4%E6%97%B6%E5%88%86%E6%94%AF"><span class="toc-number">1.2.6.</span> <span class="toc-text">删除本地和远程的临时分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%B5%81"><span class="toc-number">1.2.7.</span> <span class="toc-text">总结的工作流</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E8%BF%9C%E7%A8%8B%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0"><span class="toc-number">1.3.</span> <span class="toc-text">从远程获取更新</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E8%BF%9C%E7%A8%8B%E5%88%86%E6%94%AF%E6%98%AF%E5%A6%82%E5%9B%BE%EF%BC%8C%E8%80%8C%E6%9C%AC%E5%9C%B0%E5%88%86%E6%94%AF%E5%B7%B2%E7%BB%8F%E5%9C%A8%E6%AD%A4%E5%88%86%E6%94%AF%E4%B8%8A%E6%8F%90%E4%BA%A4%E4%BA%86%E6%9B%B4%E6%96%B0%EF%BC%8C%E6%AD%A4%E6%97%B6%E9%9C%80%E8%A6%81git-fetch%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0%E5%90%8E%E5%86%8D%E4%BD%BF%E7%94%A8git-merge%E5%90%88%E5%B9%B6%EF%BC%8C%E8%BF%99%E4%B8%A4%E6%9D%A1%E5%91%BD%E4%BB%A4%E7%AD%89%E5%90%8C%E4%BA%8Egit-pull"><span class="toc-number">1.3.0.1.</span> <span class="toc-text">如果远程分支是如图，而本地分支已经在此分支上提交了更新，此时需要git fetch获取更新后再使用git merge合并，这两条命令等同于git pull</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B"><span class="toc-number">1.4.</span> <span class="toc-text">将本地更新提交到远程</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/07/20/%E5%BC%80%E7%AB%AF/" title="开端"><img src="https://source.unsplash.com/random" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="开端"/></a><div class="content"><a class="title" href="/2025/07/20/%E5%BC%80%E7%AB%AF/" title="开端">开端</a><time datetime="2025-07-19T16:00:00.000Z" title="发表于 2025-07-20 00:00:00">2025-07-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/02/22/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/" title="无题"><img src="https://source.unsplash.com/random" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2025/02/22/C++%E6%A0%B8%E5%BF%83%E7%BC%96%E7%A8%8B/" title="无题">无题</a><time datetime="2025-02-22T03:58:29.421Z" title="发表于 2025-02-22 11:58:29">2025-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/02/22/design_patterns/" title="Design Patterns"><img src="https://source.unsplash.com/random/800x600" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Design Patterns"/></a><div class="content"><a class="title" href="/2025/02/22/design_patterns/" title="Design Patterns">Design Patterns</a><time datetime="2025-02-22T03:58:29.406Z" title="发表于 2025-02-22 11:58:29">2025-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/02/22/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" title="二分算法"><img src="https://wallpapercave.com/wp/wp13596944.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="二分算法"/></a><div class="content"><a class="title" href="/2025/02/22/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2/" title="二分算法">二分算法</a><time datetime="2025-02-22T03:58:29.399Z" title="发表于 2025-02-22 11:58:29">2025-02-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/31/%E8%B7%A8%E5%B9%B4/" title="跨年"><img src="https://source.unsplash.com/random" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="跨年"/></a><div class="content"><a class="title" href="/2024/12/31/%E8%B7%A8%E5%B9%B4/" title="跨年">跨年</a><time datetime="2024-12-31T14:39:51.164Z" title="发表于 2024-12-31 22:39:51">2024-12-31</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By BroMikey</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(()=>{
+  const loadLivere = () => {
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if ('Livere' === 'Livere' || !true) {
+    if (true) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
